@@ -65,11 +65,11 @@ const Header = () => {
 
         {/* Mobile Slide Menu */}
         <div
-          className={`fixed top-20 right-0 rounded w-56 bg-black font-bold text-white border-pink-400 border-2 transform ${
+          className={`fixed top-20 right-0 rounded bg-black font-bold text-white border-gray-50 border-y-3 transform ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           } transition-transform duration-200 ease-in-out z-40 !p-6 md:hidden`}
         >
-          <ul className="flex flex-col gap-4 md:gap-6">
+          <ul className="flex flex-col gap-4 md:gap-6 font-normal text-center">
             <li
               className="hover:text-pink-400 cursor-pointer transition"
               onClick={toggleMenu}
