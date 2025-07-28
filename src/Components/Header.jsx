@@ -1,41 +1,55 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 import { motion, AnimatePresence } from "framer-motion";
-import AdVideo1 from "../assets/AdVideo1.mp4"
-import { BiBorderRadius } from "react-icons/bi";
+
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-      <header className="w-full h-24 flex justify-between items-center !px-6 md:!px-10 bg-black relative z-50">
+      <header
+        className={`fixed top-0 w-full z-50 h-20 md:h-24 flex justify-between items-center !px-4 sm:!px-6 md:!px-10 transition-colors duration-300 ${
+          isScrolled ? "bg-black text-white shadow-md" : "bg-black/0 text-black"
+        }`}
+      >
+        {/* Logo */}
         <img
           src="/LogoFavicon.png"
           alt="Dimple's Beauty Bar"
-          className="h-16 sm:h-20 md:h-24"
+          className="h-24 sm:h-26 md:h-30 object-contain"
         />
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex text-white gap-6">
-          <li className="hover:text-pink-400 cursor-pointer transition">
+        <ul className="hidden md:flex font-semibold gap-4 lg:gap-6 text-sm lg:text-base">
+          <li className="hover:text-pink-400 cursor-pointer transition-colors duration-300">
             Home
           </li>
-          <li className="hover:text-pink-400 cursor-pointer transition">
+          <li className="hover:text-pink-400 cursor-pointer transition-colors duration-300">
             Services
           </li>
-          <li className="hover:text-pink-400 cursor-pointer transition">
+          <li className="hover:text-pink-400 cursor-pointer transition-colors duration-300">
             Book Appointment
           </li>
-          <li className="hover:text-pink-400 cursor-pointer transition">
+          <li className="hover:text-pink-400 cursor-pointer transition-colors duration-300">
             Contact Us
           </li>
         </ul>
 
-        {/* Mobile Hamburger Icon with Animation */}
+        {/* Mobile Hamburger Icon */}
         <div
-          className="md:hidden text-white text-3xl cursor-pointer"
+          className="md:hidden text-2xl sm:text-3xl cursor-pointer"
           onClick={toggleMenu}
         >
           <AnimatePresence mode="wait">
@@ -65,11 +79,11 @@ const Header = () => {
 
         {/* Mobile Slide Menu */}
         <div
-          className={`fixed top-20 right-0 rounded bg-black font-bold text-white border-gray-50 border-y-3 transform ${
+          className={`fixed top-14 right-0 h-full w-3/4 max-w-xs rounded bg-black font-bold text-white border-gray-50 transform ${
             menuOpen ? "translate-x-0" : "translate-x-full"
-          } transition-transform duration-200 ease-in-out z-40 !p-6 md:hidden`}
+          } transition-transform duration-300 ease-in-out z-40 !p-6 md:hidden`}
         >
-          <ul className="flex flex-col gap-4 md:gap-6 font-normal text-center">
+          <ul className="flex flex-col gap-5 text-center text-base sm:text-lg">
             <li
               className="hover:text-pink-400 cursor-pointer transition"
               onClick={toggleMenu}
@@ -97,15 +111,6 @@ const Header = () => {
           </ul>
         </div>
       </header>
-      <video
-        src={AdVideo1}
-        autoPlay
-        loop
-        muted
-        playsInline
-        alt="Ad Video"
-        className="w-full !px-6 h-auto"
-      />
     </>
   );
 };

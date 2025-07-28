@@ -1,68 +1,85 @@
 import React from "react";
 
 const AllServices = () => {
-  const services = [
-    {
-      name: "Ladies - Wash & Blow Dry",
-      duration: "30 mins - 45 mins",
-      price: "from £35",
-    },
-    {
-      name: "Ladies - Curly Blow Dry",
-      duration: "30 mins",
-      price: "£60",
-    },
-    {
-      name: "Ladies - Wash, Haircut & Blow Dry",
-      duration: "45 mins",
-      price: "£50",
-    },
-    {
-      name: "Ladies - Wash & Haircut",
-      duration: "45 mins",
-      price: "£45",
-    },
-    {
-      name: "Patch Test",
-      duration: "5 mins",
-      price: "£5",
-    },
+  const menServices = [
+    { name: "Haircut", duration: "45 mins", price: "£45" },
+    { name: "Beard Trim", duration: "15 mins", price: "£10" },
+    { name: "Head Massage", duration: "20 mins", price: "£15" },
+  ];
+
+  const womenServices = [
+    { name: "Haircut", duration: "45 mins", price: "£45" },
+    { name: "Facial", duration: "60 mins", price: "£50" },
+    { name: "Manicure", duration: "30 mins", price: "£25" },
   ];
 
   return (
-    <div className="overflow-x-auto !px-4 md:!px-8 lg:!px-6 !py-10 ">
-      <h2 className="text-2xl font-semibold text-pink-500 !mb-6 text-center">
-        Our Salon Services
-      </h2>
-      <table className="min-w-full text-sm text-gray-700 border border-gray-200 rounded-lg overflow-hidden">
-        <thead className="bg-gray-100 text-gray-800 text-left">
-          <tr>
-            <th className="!p-4 font-bold border-b border-gray-200">Service</th>
-            <th className="!p-4 font-bold border-b border-gray-200">Duration</th>
-            <th className="!p-4 font-bold border-b border-gray-200">Price</th>
-            <th className="!p-4 font-bold border-b border-gray-200 text-center">
-              Action
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {services.map((service, index) => (
-            <tr
-              key={index}
-              className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}
-            >
-              <td className="!p-4 border-b border-gray-200">{service.name}</td>
-              <td className="!p-4 border-b border-gray-200">{service.duration}</td>
-              <td className="!p-4 border-b border-gray-200">{service.price}</td>
-              <td className="!p-4 border-b border-gray-200 text-center">
-                <button className="bg-black text-white !px-5 !py-2 rounded-md text-sm hover:bg-gray-800 transition-all">
-                  Select
-                </button>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div className="max-w-6xl !mx-auto !px-4 sm:!px-6 lg:!px-8 !py-10">
+      {/* <h2 className="text-3xl font-bold !mb-10 text-center text-pink-600">
+        All Services
+      </h2> */}
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Men's Services */}
+        <div className="bg-white rounded-2xl shadow-lg !p-6 border border-gray-100 flex flex-col">
+          <h3 className="text-xl font-semibold text-blue-600 !mb-6 text-center">
+            Men's Services
+          </h3>
+          <div className="flex-1 space-y-5">
+            {menServices.map((service, i) => (
+              <div
+                key={i}
+                className="flex justify-between items-center border-t !pt-4"
+              >
+                <div>
+                  <p className="text-base font-medium text-blue-600">
+                    {service.name}
+                  </p>
+                  <p className="text-sm !mt-1 text-gray-500">{service.duration}</p>
+                </div>
+                <div className="text-right">
+                  <p className="text-base text-green-700 font-semibold">
+                    {service.price}
+                  </p>
+                  <button className="!my-2 text-sm text-blue-600 hover:underline font-medium">
+                    Select
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Women's Services */}
+        <div className="bg-white rounded-2xl shadow-lg !p-6 border border-gray-100 flex flex-col">
+          <h3 className="text-xl font-semibold text-pink-600 !mb-6 text-center">
+            Women's Services
+          </h3>
+          <div className="flex-1 space-y-5">
+            {womenServices.map((service, i) => (
+              <div
+                key={i}
+                className="flex justify-between items-center border-t !pt-4"
+              >
+                <div>
+                  <p className="text-base font-medium text-pink-600">
+                    {service.name}
+                  </p>
+                  <p className="text-sm !mt-1 text-gray-500">{service.duration}</p>
+                </div>
+                <div className="text-right">
+                  <p className="text-base text-green-700 font-semibold">
+                    {service.price}
+                  </p>
+                  <button className="!my-2 text-sm text-pink-600 hover:underline font-medium">
+                    Select
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
