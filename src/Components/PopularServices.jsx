@@ -42,7 +42,7 @@ const PopularServices = () => {
   }, []);
 
   return (
-    <div className="max-w-6xl !mx-auto !px-4 sm:!px-6 lg:!px-8 !py-10">
+    <div className="max-w-6xl !mx-auto !px-4 sm:!px-6 lg:!px-8 !py-10  font-serif">
       <h2 className="text-xl sm:text-2xl md:text-3xl font-bold !mb-6 sm:!mb-8 text-center text-pink-600">
         Popular Services
       </h2>
