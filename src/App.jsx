@@ -1,12 +1,12 @@
-import { useState } from 'react'
 import Home from './Pages/Home'
-
+import FloatBtn from "./Components/FloatBtn"
 
 function App() {
  
 
   return (
     <>
+      <FloatBtn />
       <Home />
     </>
   )

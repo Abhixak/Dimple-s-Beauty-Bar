@@ -26,7 +26,7 @@ const PopularServices = () => {
 
   useEffect(() => {
     const scrollContainer = scrollRef.current;
-    updateScrollButtons(); // Initial check
+    updateScrollButtons(); 
 
     if (scrollContainer) {
       scrollContainer.addEventListener("scroll", updateScrollButtons);
@@ -42,8 +42,8 @@ const PopularServices = () => {
   }, []);
 
   return (
-    <div className="max-w-6xl !mx-auto !px-4 sm:!px-6 lg:!px-8 !py-10  font-serif">
-      <h2 className="text-xl sm:text-2xl md:text-3xl font-bold !mb-6 sm:!mb-8 text-center text-pink-600">
+    <div className="!mt-20 relative z-50">
+      <h2 className="text-xl sm:text-2xl md:text-3xl font-bold !mb-6 sm:!my-8 text-center text-pink-600">
         Popular Services
       </h2>
 
@@ -81,7 +81,11 @@ const PopularServices = () => {
               items: [
                 { name: "Eyebrow", duration: "15 mins", price: "£15" },
                 { name: "Eyelash", duration: "15 mins", price: "£20" },
-                { name: "Eyebrow & Eyelash", duration: "20 mins", price: "£25" },
+                {
+                  name: "Eyebrow & Eyelash",
+                  duration: "20 mins",
+                  price: "£25",
+                },
               ],
             },
             {
@@ -111,8 +115,8 @@ const PopularServices = () => {
             <div
               key={i}
               className="bg-white rounded-xl shadow-md !p-3 sm:!p-4 md:!p-6 border border-gray-100 
-                         min-w-[140px] sm:min-w-[180px] md:min-w-[250px] lg:min-w-[280px] 
-                         flex-shrink-0"
+                min-w-[140px] sm:min-w-[180px] md:min-w-[250px] lg:min-w-[280px] 
+                flex-shrink-0"
             >
               <h3 className="text-sm sm:text-base md:text-lg font-semibold text-black !mb-2 sm:!mb-3">
                 {service.title}

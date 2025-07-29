@@ -4,7 +4,7 @@ import AdPicture1 from "../assets/Adv1.png"
 
 const Advertise = () => {
   return (
-    <div>
+    <div className="!mt-0 md:!mt-0 relative z-60">
       {/* <video
         src={AdVideo1}
         autoPlay

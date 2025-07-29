@@ -1,20 +1,13 @@
-import React from "react";
-import Header from "../Components/Header";
-import Advertise from "../Components/Advertise";
-import BackIMG from "../assets/backImage.png";
-import PopularServices from "../Components/PopularServices";
-// import AllServices from "../Components/AllServices";
+import Landing  from "../Components/Landing";
+
 const Home = () => {
+
+
   return (
-    <div>
-      <Header />
-      <div className="">
-        <img src={BackIMG} alt="" />
+    <div className="relative">
+      <div className="relative z-20">
+        < Landing />
       </div>
-      <PopularServices />
-      <Advertise />
-      {/* <AllServices /> */}
-      
     </div>
   );
 };
