@@ -1,0 +1,113 @@
+{
+  "Laser Hair Removal": [
+    { "title": "Electrolysis", "time": "-", "price": "-" },
+    { "title": "Hydra Facial", "time": "-", "price": "-" },
+    { "title": "Lycon Waxing", "time": "-", "price": "-" }
+  ],
+  "Derma Fillers": [
+    { "title": "Dermapen", "time": "-", "price": "-" },
+    { "title": "Mesotherapy", "time": "-", "price": "-" },
+    { "title": "Skin Tan Removal", "time": "-", "price": "-" },
+    { "title": "PRP Hair & Skin Treatment", "time": "-", "price": "-" }
+  ],
+  "Vitamin Drips": [
+    { "title": "Glutathione Drip", "time": "-", "price": "-" },
+    { "title": "B12 Injection", "time": "-", "price": "-" },
+    { "title": "Vitamin D Injection", "time": "-", "price": "-" },
+    { "title": "Lemon Bottle Skin Booster", "time": "-", "price": "-" },
+    { "title": "Lemon Bottle Fat Dissolve", "time": "-", "price": "-" }
+  ],
+
+  "Haircuts & Hairdressing": [
+    {
+      "title": "Wash & Blow Dry",
+      "time": "30-45 min",
+      "price": "from £35",
+      "subItems": [
+        { "title": "Short Hair", "time": "30 min", "price": "£35" },
+        { "title": "Medium Hair", "time": "40 min", "price": "£40" },
+        { "title": "Long Hair", "time": "45 min", "price": "£45" }
+      ]
+    },
+    { "title": "Curly Blow Dry", "time": "30 min", "price": "£60" },
+    { "title": "Wash, Haircut & Blow Dry", "time": "45 min", "price": "£50" },
+    { "title": "Wash & Haircut", "time": "45 min", "price": "£45" },
+    { "title": "Patch Test", "time": "5 min", "price": "£5" }
+  ],
+
+  "Waxing": [
+    { "title": "Waxing - Hollywood", "time": "30 min", "price": "£50" },
+    {
+      "title": "Waxing - Hollywood (Hot Wax)",
+      "time": "30 min",
+      "price": "£60"
+    },
+    {
+      "title": "Waxing - Leg",
+      "time": "20-30 min",
+      "price": "from £18",
+      "subItems": [
+        { "title": "Half Leg", "time": "20 min", "price": "£18" },
+        { "title": "Three-Quarter Leg", "time": "20 min", "price": "£20" },
+        { "title": "Full Leg", "time": "30 min", "price": "£25" }
+      ]
+    }
+  ],
+  "Eyebrows & Eyelashes": [
+    { "title": "Eyebrow", "time": "15 min", "price": "£15" },
+    { "title": "Eyelash", "time": "15 min", "price": "£20" },
+    { "title": "Eyebrow & Eyelash", "time": "20 min", "price": "£25" }
+  ],
+  "Classic Massages": [
+    {
+      "title": "Swedish Massage",
+      "time": "30-60 min",
+      "price": "from £45",
+      "subItems": [
+        { "title": "30 min", "time": "30 min", "price": "£45" },
+        { "title": "60 min", "time": "60 min", "price": "£65" }
+      ]
+    },
+    {
+      "title": "Back Massage",
+      "time": "30-60 min",
+      "price": "from £40",
+      "subItems": [
+        { "title": "30 min", "time": "30 min", "price": "£40" },
+        { "title": "60 min", "time": "60 min", "price": "£65" }
+      ]
+    },
+    {
+      "title": "Aromatherapy Massage",
+      "time": "30-60 min",
+      "price": "from £50",
+      "subItems": [
+        { "title": "30 min", "time": "30 min", "price": "£50" },
+        { "title": "60 min", "time": "60 min", "price": "£80" }
+      ]
+    },
+    {
+      "title": "Indian Head Massage",
+      "time": "30-60 min",
+      "price": "from £35",
+      "subItems": [
+        { "title": "30 min", "time": "30 min", "price": "£35" },
+        { "title": "60 min", "time": "60 min", "price": "£50" }
+      ]
+    },
+    {
+      "title": "Foot & Leg Massage",
+      "time": "15-30 min",
+      "price": "from £35",
+      "subItems": [
+        { "title": "30 min", "time": "30 min", "price": "£35" },
+        { "title": "60 min", "time": "60 min", "price": "£50" }
+      ]
+    }
+  ],
+  "Facials": [
+    { "title": "Facial - Deep Cleansing", "time": "60 min", "price": "£50" },
+    { "title": "Facial - Microdermabrasion", "time": "60 min", "price": "£65" },
+    { "title": "Facial - Face Peel", "time": "60 min", "price": "£70" }
+  ]
+}
