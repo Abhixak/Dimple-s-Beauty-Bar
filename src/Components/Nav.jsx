@@ -11,7 +11,6 @@ const Nav = () => {
     <>
     
       <div className="flex flex-wrap items-center justify-between bg-gray-400 !px-3 sm:!px-6 text-white">
-        {/* Logo */}
         <img src={Logo} alt="LOGO" className="h-30 sm:h-28" />
 
         {/* Desktop Menu */}
