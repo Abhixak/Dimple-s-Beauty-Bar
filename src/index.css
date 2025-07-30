@@ -1,11 +1,40 @@
 @import "tailwindcss";
 
+<<<<<<< HEAD
 *{
+=======
+* {
+>>>>>>> fb34473d7420cb42a1446fa4532ca99974e0fcb1
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 body::-webkit-scrollbar{
   width: 0;
 }
+=======
+body {
+  background-color: black;
+  font-family: "Playwrite HU", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+body::-webkit-scrollbar,#PopularServices::-webkit-scrollbar{
+  width: 0;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #444;
+}
+>>>>>>> fb34473d7420cb42a1446fa4532ca99974e0fcb1

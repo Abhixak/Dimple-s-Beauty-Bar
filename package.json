@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "dimplesbeautybar",
+=======
+  "name": "dimplebeautybar",
+>>>>>>> fb34473d7420cb42a1446fa4532ca99974e0fcb1
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,6 +14,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@tailwindcss/vite": "^4.1.11",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^12.23.11",
@@ -17,6 +22,16 @@
     "react-dom": "^19.1.0",
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.7.1",
+=======
+    "@ant-design/icons": "^5.6.1",
+    "@tailwindcss/vite": "^4.1.11",
+    "antd": "^5.26.6",
+    "framer-motion": "^12.23.9",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-icons": "^5.5.0",
+    "tailwind-scrollbar-hide": "^4.0.0",
+>>>>>>> fb34473d7420cb42a1446fa4532ca99974e0fcb1
     "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
