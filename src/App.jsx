@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
@@ -20,20 +19,3 @@ function App() {
 }
 
 export default App;
-=======
-import Home from './Pages/Home'
-import FloatBtn from "./Components/FloatBtn"
-
-function App() {
- 
-
-  return (
-    <>
-      <FloatBtn />
-      <Home />
-    </>
-  )
-}
-
-export default App
->>>>>>> fb34473d7420cb42a1446fa4532ca99974e0fcb1
